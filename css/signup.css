@@ -1,0 +1,162 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    /* background-color: rgb(189, 189, 189); */
+    /* background img set */
+    background: url(../img/loginbackground-img.jpg) no-repeat center;
+    background-size: cover
+}
+
+body::before
+{
+    content: "";
+    position: absolute; z-index: 1;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.top-header
+{
+    width: 100%;
+    height: 58px;
+    z-index: 2;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    /* background-color: rgba(0, 0, 0, .8); */
+}
+
+.top-nav
+{
+    padding: 10px;
+    justify-content: end;
+}
+
+.fa-house, .fa-bars, .fa-circle-user
+{
+    color: rgb(204, 204, 204);
+    font-size: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+    translate: 0.3;
+    cursor: pointer;
+}
+
+/* 22.02.23 class name signup-box --> main-box */
+body .main-container
+{
+    z-index: 2;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .87);
+    border-radius: 20px;
+    box-shadow: 5px 20px 20px rgba(0, 0, 0, .5);
+}
+
+h1
+{
+    display: block;
+    padding: 20px;
+    font-size: 65px; color: #fff;
+    text-align: center;
+}
+
+.input-signup-box
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 10px;
+
+}
+
+/* 22.02.23 add transition effect */
+.input-box
+{
+    width: 70%;
+    justify-content: center;
+    background-color: transparent;
+    outline: none;
+    border: 3px solid rgb(179, 179, 179);
+    border-radius: 15px;
+    font-size: 16px; color: #fff;
+    padding: 15px;
+    margin: 10px;
+    transition: 0.25s;
+    box-sizing: border-box;
+}
+
+input::placeholder
+{
+    color: rgb(223, 223, 223);
+}
+
+/* 2022.02.23 add focus */
+.input-box:focus
+{
+    width: 85%;
+    font-size: 23px;
+    border: 6px solid rgb(198, 211, 84);
+}
+
+form .sub-container
+{
+    margin-top: 3px;
+    display: flex;
+    flex-direction: row;
+}
+
+form div .extra
+{
+    position: relative;
+    top: 1px;
+    color: rgb(202, 202, 202);
+    margin-right: 9px;
+}
+
+form div .checkbox
+{
+    position: relative;
+    top: 5px;
+}
+
+.submit-box
+{
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.submit-box
+{
+    width: 70%;
+    font-size: 20px;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.20s;
+}
+
+/* 22.02.23 add submit hover */
+.submit-box:hover
+{
+    background-color: rgb(183, 183, 255);
+}
