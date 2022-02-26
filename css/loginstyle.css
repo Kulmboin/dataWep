@@ -2,6 +2,7 @@
 {
     padding: 0;
     margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body
@@ -21,64 +22,85 @@ body
     background-repeat: no-repeat; */    
 }
 
-body::before
+/* body::before
 {
     content: "";
     position: absolute; z-index: 1;
     top: 0; left: 0; right: 0; bottom: 0;
-    background-color: rgba(0, 0, 0, .4);
-}
+} */
 
-.login-box
+.main-container
 {
-    padding: 55px;
-    background-color: rgba(255, 255, 255, .9);
-    width: auto;
-    border-radius: 15px;
-    box-shadow: 20px 10px 10px black;
+    width: 400px;
+    padding: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgba(0, 0, 0, .87);
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 2;
-    align-items: center;
-    width: auto;
 }
 
 section h1
 {
-    font-size: 100px;
-    align-self: top;
+    font-size: 65px;
     text-align: center;
-    color: black;
-    margin-bottom: 50px;
-    z-index: -1;
+    color: #fff;
+    margin-bottom: 40px;
+    z-index: 0;
+}
+
+section form{width: 100%;}
+
+section form .int-area
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section form div input
+{
+    width: 75%;
+    padding: 15px;
+    margin: 10px;
+    background-color: transparent;
+    outline: none;
+    border:1px solid #fff;
+    border-radius: 15px;
+    font-size: 16px; color: #fff;
+    box-sizing: border-box;
+    transition: 0.25s;
 }
 
 input::placeholder
 {
-    color: black;
-    opacity: 0.5;
+    color: #fff;
+    opacity: 0.7;
 }
 
-.int-area{width: 100%;}
-.int-area input
+input:hover
 {
-    width: 100%;
-    align-items: center;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    border-bottom:1px solid black;
-    font-size: 15px; color: black;
+    cursor: pointer;
+    border: 3px solid #83e24c;
 }
 
-.btn-submit{margin-top: 10px;}
+.btn-submit
+{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .btn-submit button
 {
-    width: 100%;
+    width: 75%;
     height: 100%;
     padding: 10px;
     background: #0066ff;
@@ -87,15 +109,16 @@ input::placeholder
     border: none;
     border-radius: 25px;
     margin: 2px;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
-div a .join-member
+.btn-submit button:hover
 {
-    justify-self: center;
+    background-color: rgb(183, 183, 255);
 }
 
-div a .forgot
+section form .user-help
 {
-    text-align: left;
+    color: rgb(187, 187, 187);
 }
-
