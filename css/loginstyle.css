@@ -11,11 +11,11 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    /* background image set */
+    background-color: rgb(122, 146, 57);
     height: 100vh;
-    background: url(../img/loginbackground-img.jpg) no-repeat center;
-    background-size: cover
+    /* background image set */
+    /* background: url(../img/loginbackground-img.jpg) no-repeat center;
+    background-size: cover; */
     /* background-image: url(../img/loginbackground-img.jpg);
     background-position: center;
     background-size: cover;
@@ -35,7 +35,7 @@ body
     padding: 20px;
     margin-top: auto;
     margin-bottom: auto;
-    background-color: rgba(0, 0, 0, .87);
+    background-color: rgba(0, 0, 0, .78);
     border-radius: 20px;
     box-shadow: 5px 10px 10px black;
     display: flex;

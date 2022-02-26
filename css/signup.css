@@ -10,11 +10,12 @@ body
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(122, 146, 57);
     height: 100vh;
     /* background-color: rgb(189, 189, 189); */
     /* background img set */
-    background: url(../img/loginbackground-img.jpg) no-repeat center;
-    background-size: cover
+    /* background: url(../img/loginbackground-img.jpg) no-repeat center;
+    background-size: cover; */
 }
 
 /* body::before
@@ -62,7 +63,7 @@ body .main-container
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, .87);
+    background-color: rgba(0, 0, 0, .78);
     border-radius: 20px;
     box-shadow: 5px 20px 20px rgba(0, 0, 0, .5);
 }
