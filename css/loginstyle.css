@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&family=Shizuru&display=swap');
+
 *
 {
     padding: 0;
@@ -11,27 +13,47 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(122, 146, 57);
-    height: 100vh;
-    /* background image set */
-    /* background: url(../img/loginbackground-img.jpg) no-repeat center;
-    background-size: cover; */
-    /* background-image: url(../img/loginbackground-img.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; */    
+    background-color: rgb(198, 219, 139);
+    /* height: 100vh; */
 }
 
-/* body::before
+.top-header
 {
-    content: "";
-    position: absolute; z-index: 1;
-    top: 0; left: 0; right: 0; bottom: 0;
-} */
+    width: 100%;
+    height: 60px;
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing:border-box ;
+}
+
+.navbar
+{
+    margin: 2px;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    /* margin: 2px; */
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+body header nav a
+{
+    margin-right: 15px;
+    margin-left: 15px;
+    font-family: 'Roboto Mono', monospace;
+}
 
 .main-container
 {
-    width: 400px;
+    width: 350px;
+    height: 450px;
     padding: 20px;
     margin-top: auto;
     margin-bottom: auto;
@@ -42,7 +64,7 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    /* z-index: 2; */
 }
 
 section h1
@@ -77,6 +99,7 @@ section form div input
     font-size: 16px; color: #fff;
     box-sizing: border-box;
     transition: 0.25s;
+    rotate: 0.001em;;
 }
 
 input::placeholder
@@ -89,6 +112,13 @@ input:hover
 {
     cursor: pointer;
     border: 3px solid #83e24c;
+}
+
+input:focus
+{
+    width: 90%;
+    font-size: 21px;
+    border: 6px solid rgb(198, 211, 84);
 }
 
 .btn-submit
@@ -111,6 +141,7 @@ input:hover
     margin: 2px;
     margin-bottom: 20px;
     cursor: pointer;
+    transition: 0.25s;
 }
 
 .btn-submit button:hover
