@@ -14,7 +14,7 @@ body
     justify-content: center;
     align-items: center;
     background-color: rgb(198, 219, 139);
-    /* height: 100vh; */
+    height: 100vh;
 }
 
 .top-header
@@ -55,7 +55,6 @@ body header nav a
     width: 350px;
     height: 450px;
     padding: 20px;
-    margin-top: auto;
     margin-bottom: auto;
     background-color: rgba(0, 0, 0, .78);
     border-radius: 20px;
